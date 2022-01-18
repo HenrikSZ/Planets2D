@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+    <dontWrapJar>true</dontWrapJar>
+    <headerType>gui</headerType>
+    <jar>target\bin\planets2D-1.0.jar</jar>
+    <outfile>target\launch4j\planets2D.exe</outfile>
+    <cmdLine>-Xmx512M -Xms256M</cmdLine>
+    <chdir>.</chdir>
+    <priority>normal</priority>
+    <downloadUrl>http://java.com/download</downloadUrl>
+    <stayAlive>false</stayAlive>
+    <restartOnCrash>true</restartOnCrash>
+    <jre>
+        <path>bin\jre</path>
+        <bundledJre64Bit>true</bundledJre64Bit>
+        <bundledJreAsFallback>false</bundledJreAsFallback>
+        <minVersion>1.10</minVersion>
+        <maxVersion>1.11</maxVersion>
+        <jdkPreference>preferJre</jdkPreference>
+        <runtimeBits>64/32</runtimeBits>
+    </jre>
+</launch4jConfig>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="planets2D">
+    <target name="install">
+        <copy file="target/maven-jar/planets2D-1.0.jar" todir="target/launch4j/bin"/>
+    </target>
+    <target name="deploy" depends="install">
+        <exec executable="C:\Program Files (x86)\Inno Setup 6\iscc.exe">
+            <arg value="setup.iss"/>
+        </exec>
+    </target>
+</project>
