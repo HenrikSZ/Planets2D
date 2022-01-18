@@ -35,14 +35,13 @@
                     </archive>
                 </configuration>
             </plugin>
-            <plugin>
+            <!--<plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-antrun-plugin</artifactId>
                 <version>1.8</version>
                 <executions>
                     <execution>
-                        <id>1</id>
-                        <phase>package</phase>
+                        <phase>deploy</phase>
                         <configuration>
                             <target>
                                 <ant antfile="${basedir}/build.xml">
@@ -54,22 +53,8 @@
                             <goal>run</goal>
                         </goals>
                     </execution>
-                    <execution>
-                        <id>2</id>
-                        <phase>deploy</phase>
-                        <configuration>
-                            <target>
-                                <ant antfile="${basedir}/build.xml">
-                                    <target name="deploy"/>
-                                </ant>
-                            </target>
-                        </configuration>
-                        <goals>
-                            <goal>run</goal>
-                        </goals>
-                    </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
     </build>
 </project>
